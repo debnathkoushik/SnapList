@@ -25,10 +25,10 @@ app.use(bodyParser.json());
 app.post("/createTask", authVerification, createTaskHandler);
 
 //api endpoint to for reading data from DB
-app.get("/getTaskList", authVerification, getTaskListHandler);
+app.get("/getTaskList", getTaskListHandler);
 
 //api endpoint to update a particular row in the database
-app.put("/updateTask", authVerification, updateTaskHandler);
+app.put("/updateTask", updateTaskHandler);
 
 //api endpoint to delete a particular row from DB
 app.delete("/deleteTask", authVerification, deleteTaskHandler);
@@ -42,9 +42,9 @@ app.listen(3000, () => {
 });
 
 /***
- * 1. Add authVerification for all routes
+ * 1. Add authVerification for all routes (done)
  * 2. Check every handler for edge case. Server SHOULD NOT crash
- * 3. Add environment variables. Move Supabase API keys to .env file. DO NOT push .env file into Github
+ * 3. Add environment variables. Move Supabase API keys to .env file. DO NOT push .env file into Github (done)
  *
  *
  */

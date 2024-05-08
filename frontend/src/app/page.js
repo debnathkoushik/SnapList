@@ -1,3 +1,6 @@
+import Stack from "@mui/material/Stack";
+import Button from "@mui/material/Button";
+
 import Image from "next/image";
 import styles from "./page.module.css";
 
@@ -9,6 +12,11 @@ export default function Home() {
           Get started by editing&nbsp;
           <code className={styles.code}>src/app/page.js</code>
         </p>
+        <Stack spacing={2} direction="row">
+          <Button variant="text">Text</Button>
+          <Button variant="contained">Contained</Button>
+          <Button variant="outlined">Outlined</Button>
+        </Stack>
         <div>
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"

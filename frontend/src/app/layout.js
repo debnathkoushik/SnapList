@@ -7,7 +7,7 @@ export default function RootLayout(props) {
   return (
     <html lang="en">
       <body>
-        <AppRouterCacheProvider options={{ key: "mui" }}>
+        <AppRouterCacheProvider options={{ key: "css" }}>
           <ThemeProvider theme={theme}>{children}</ThemeProvider>
         </AppRouterCacheProvider>
       </body>

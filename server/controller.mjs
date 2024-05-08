@@ -10,7 +10,7 @@ export const createTaskHandler = async (req, res) => {
 
   //check for null, undefined and empty params in request object
   if (task === null || undefined || "") {
-    res.send("Invalid format");
+    res.status(400).send("Bad Request");
   } else {
     const { data, error } = await supabase
       .from("to-do-list")
@@ -45,7 +45,7 @@ export const updateTaskHandler = async (req, res) => {
 
   //checks for null, undefined and empty task
   if (task === null || undefined || "") {
-    res.send("Invalid format");
+    res.status().send("Invalid format");
   } else {
     const { data, error } = await supabase
       .from("to-do-list")
