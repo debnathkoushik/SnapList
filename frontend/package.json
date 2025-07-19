@@ -20,6 +20,8 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
     "eslint": "^8",
     "eslint-config-next": "14.1.4"
   }
